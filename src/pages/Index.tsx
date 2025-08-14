@@ -234,7 +234,7 @@ export default function Index() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-4">
-            {[1, 2, 3, 1, 2, 3].map((index, i) => (
+            {[1, 2, 1, 2, 1, 2].map((index, i) => (
               <div key={i} className="relative overflow-hidden rounded-lg group cursor-pointer">
                 <img 
                   src={tours[index - 1].image}

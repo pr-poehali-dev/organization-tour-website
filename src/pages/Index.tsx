@@ -349,17 +349,15 @@ export default function Index() {
                 <div>
                   <h3 className="font-semibold font-montserrat mb-2">Адрес</h3>
                   <p className="г москва
-">
-                    г. Москва, ул. Приключений, 123<br />
-                    БЦ "Путешественник", офис 456
-                  </p>
+">г. Мытищи
+Тенистый бульвар, 19</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <Icon name="Phone" size={24} className="text-primary mt-1" />
                 <div>
                   <h3 className="font-semibold font-montserrat mb-2">Телефон</h3>
-                  <p className="text-muted-foreground">
+                  <p className="">
                     +7 (495) 123-45-67<br />
                     +7 (800) 555-66-77
                   </p>

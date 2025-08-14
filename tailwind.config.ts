@@ -20,7 +20,8 @@ export default {
 		extend: {
 			fontFamily: {
 				montserrat: ['Montserrat', 'sans-serif'],
-				'open-sans': ['Open Sans', 'sans-serif']
+				'open-sans': ['Open Sans', 'sans-serif'],
+				cormorant: ['Cormorant', 'serif']
 			},
 			colors: {
 				adventure: {

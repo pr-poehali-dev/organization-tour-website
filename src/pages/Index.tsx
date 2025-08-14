@@ -367,7 +367,7 @@ export default function Index() {
                 <Icon name="Mail" size={24} className="text-primary mt-1" />
                 <div>
                   <h3 className="font-semibold font-montserrat mb-2">Email</h3>
-                  <p className="text-muted-foreground">
+                  <p className="">
                     info@adventure-tours.ru<br />
                     booking@adventure-tours.ru
                   </p>
@@ -402,7 +402,7 @@ export default function Index() {
                 </div>
                 <div>
                   <label className="text-sm font-medium">Интересующий тур</label>
-                  <select className="w-full mt-1 px-3 py-2 border rounded-md">
+                  <select className="">
                     <option>Выберите тур</option>
                     <option>Горные Приключения</option>
                     <option>Тропический Рай</option>

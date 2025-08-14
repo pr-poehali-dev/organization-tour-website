@@ -21,8 +21,7 @@ export default {
 			fontFamily: {
 				montserrat: ['Montserrat', 'sans-serif'],
 				'open-sans': ['Open Sans', 'sans-serif'],
-				cormorant: ['Cormorant', 'serif'],
-				mak: ['Mak', 'sans-serif']
+				cormorant: ['Cormorant', 'serif']
 			},
 			colors: {
 				adventure: {

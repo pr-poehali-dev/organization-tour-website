@@ -10,20 +10,20 @@ export default function Index() {
     {
       id: 1,
       title: "Турция",
-      description: "Откройте для себя древние города, средиземноморское побережье и богатую культуру Турции",
-      price: "200,000 ₽",
-      duration: "8 дней",
-      difficulty: "Легкая",
-      image: "/img/3f423125-1ab4-40e7-b24a-7c86fbc7e0b3.jpg"
+      description: "Стамбул, Каппадокия, термальные источники Памуккале. Богатая история, восточная культура и гостеприимство",
+      price: "от 85,000 ₽",
+      duration: "7-10 дней",
+      difficulty: "Комфортно",
+      image: "/img/77f17638-8261-4860-84ac-688b6f855752.jpg"
     },
     {
       id: 2,
       title: "Дагестан",
-      description: "Путешествие по горным селениям и древним крепостям Кавказа",
-      price: "90,000 ₽",
-      duration: "8 дней",
-      difficulty: "Средняя",
-      image: "/img/d1f2b6fd-5c70-40ca-a5b8-1d3698a798b7.jpg"
+      description: "Махачкала, Дербент, горные аулы. Кавказские пейзажи, национальная кухня и древние традиции",
+      price: "от 45,000 ₽",
+      duration: "5-8 дней",
+      difficulty: "Активно",
+      image: "/img/df5b94ad-5827-4497-847c-f6c1ae1fe38e.jpg"
     }
   ];
 
@@ -118,12 +118,12 @@ export default function Index() {
         />
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-medium font-cormorant mb-6 animate-fade-in">
-            ПРИКЛЮЧЕНИЯ
+            ТУРЦИЯ И
             <br />
-            <span className="text-primary">ЖДУТ ТЕБЯ</span>
+            <span className="text-primary">ДАГЕСТАН</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 animate-fade-in opacity-90">
-            Открой мир невероятных путешествий с нашими эксклюзивными турами
+            Два незабываемых направления. Восточная культура и кавказские горы
           </p>
           <div className="flex justify-center animate-fade-in">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-4">
@@ -138,9 +138,9 @@ export default function Index() {
       <section id="tours" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-medium font-cormorant mb-4">Наши Туры</h2>
+            <h2 className="text-4xl font-medium font-cormorant mb-4">Наши Направления</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Выберите свое идеальное приключение из нашей коллекции уникальных туров
+              Два уникальных направления для незабываемых путешествий
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -214,7 +214,7 @@ export default function Index() {
             </div>
             <div className="relative">
               <img 
-                src="/img/45bf2166-3780-493c-afb8-4cb8793634c0.jpg" 
+                src="/img/4ac2c14c-0be4-49fd-bc4e-9d0b01ff66fe.jpg" 
                 alt="О компании"
                 className="rounded-lg shadow-xl"
               />
@@ -233,11 +233,18 @@ export default function Index() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-4">
-            {[1, 2, 1, 2, 1, 2].map((index, i) => (
+            {[
+              { src: "/img/77f17638-8261-4860-84ac-688b6f855752.jpg", alt: "Каппадокия, Турция" },
+              { src: "/img/df5b94ad-5827-4497-847c-f6c1ae1fe38e.jpg", alt: "Горы Дагестана" },
+              { src: "/img/b7aef1bc-eea3-4b13-b2af-48771c15ae61.jpg", alt: "Турецкий базар" },
+              { src: "/img/8b6ef8ad-04fa-4a01-9d41-cc3d9ef87995.jpg", alt: "Дагестанская кухня" },
+              { src: "/img/77f17638-8261-4860-84ac-688b6f855752.jpg", alt: "Турция" },
+              { src: "/img/df5b94ad-5827-4497-847c-f6c1ae1fe38e.jpg", alt: "Дагестан" }
+            ].map((image, i) => (
               <div key={i} className="relative overflow-hidden rounded-lg group cursor-pointer">
                 <img 
-                  src={tours[index - 1].image}
-                  alt={`Галерея ${i + 1}`}
+                  src={image.src}
+                  alt={image.alt}
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">

@@ -90,7 +90,7 @@ export default function Index() {
           <nav className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Icon name="Mountain" size={32} className="text-primary" />
-              <h1 className="text-2xl font-medium font-cormorant text-primary">Туда-Сюда, Поехали</h1>
+              <h1 className="text-2xl font-medium font-mak text-primary">Туда-Сюда, Поехали</h1>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#tours" className="hover:text-primary transition-colors">Туры</a>
@@ -117,7 +117,7 @@ export default function Index() {
           }}
         />
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-medium font-cormorant mb-6 animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-medium font-mak mb-6 animate-fade-in">
             ПРИКЛЮЧЕНИЯ
             <br />
             <span className="text-primary">ЖДУТ ТЕБЯ</span>
@@ -142,7 +142,7 @@ export default function Index() {
       <section id="tours" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-medium font-cormorant mb-4">Наши Туры</h2>
+            <h2 className="text-4xl font-medium font-mak mb-4">Наши Туры</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Выберите свое идеальное приключение из нашей коллекции уникальных туров
             </p>
@@ -161,7 +161,7 @@ export default function Index() {
                   </Badge>
                 </div>
                 <CardHeader>
-                  <CardTitle className="font-cormorant text-xl">{tour.title}</CardTitle>
+                  <CardTitle className="font-mak text-xl">{tour.title}</CardTitle>
                   <CardDescription>{tour.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -192,7 +192,7 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-medium font-cormorant mb-6">О нашей компании</h2>
+              <h2 className="text-4xl font-medium font-mak mb-6">О нашей компании</h2>
               <p className="text-lg text-muted-foreground mb-6">
 «Туда-Сюда, Поехали» — это команда профессионалов с 15-летним опытом организации незабываемых путешествий. 
                 Мы специализируемся на приключенческом туризме и знаем, как сделать ваше путешествие безопасным и увлекательным.
@@ -231,7 +231,7 @@ export default function Index() {
       <section id="gallery" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-medium font-cormorant mb-4">Галерея</h2>
+            <h2 className="text-4xl font-medium font-mak mb-4">Галерея</h2>
             <p className="text-xl text-muted-foreground">
               Взгляните на потрясающие моменты наших путешествий
             </p>
@@ -257,7 +257,7 @@ export default function Index() {
       <section className="py-20 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-medium font-cormorant mb-4">Отзывы</h2>
+            <h2 className="text-4xl font-medium font-mak mb-4">Отзывы</h2>
             <p className="text-xl text-muted-foreground">
               Что говорят наши клиенты о путешествиях с нами
             </p>
@@ -272,7 +272,7 @@ export default function Index() {
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-4 italic">"{testimonial.text}"</p>
-                  <p className="font-medium font-cormorant text-lg">{testimonial.name}</p>
+                  <p className="font-medium font-mak text-lg">{testimonial.name}</p>
                 </CardContent>
               </Card>
             ))}
@@ -284,7 +284,7 @@ export default function Index() {
       <section id="blog" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-medium font-cormorant mb-4">Блог</h2>
+            <h2 className="text-4xl font-medium font-mak mb-4">Блог</h2>
             <p className="text-xl text-muted-foreground">
               Полезные советы и вдохновляющие истории о путешествиях
             </p>
@@ -294,7 +294,7 @@ export default function Index() {
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                 <CardHeader>
                   <div className="text-sm text-muted-foreground mb-2">{post.date}</div>
-                  <CardTitle className="font-cormorant text-xl">{post.title}</CardTitle>
+                  <CardTitle className="font-mak text-xl">{post.title}</CardTitle>
                   <CardDescription>{post.excerpt}</CardDescription>
                 </CardHeader>
                 <CardFooter>
@@ -313,7 +313,7 @@ export default function Index() {
       <section id="faq" className="py-20 bg-muted/50">
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-medium font-cormorant mb-4">Часто задаваемые вопросы</h2>
+            <h2 className="text-4xl font-medium font-mak mb-4">Часто задаваемые вопросы</h2>
             <p className="text-xl text-muted-foreground">
               Ответы на самые популярные вопросы о наших турах
             </p>
@@ -321,7 +321,7 @@ export default function Index() {
           <Accordion type="single" collapsible className="space-y-4">
             {faqItems.map((item, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg px-6">
-                <AccordionTrigger className="font-cormorant text-left font-medium">
+                <AccordionTrigger className="font-mak text-left font-medium">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
@@ -337,7 +337,7 @@ export default function Index() {
       <section id="contacts" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-medium font-cormorant mb-4">Контакты</h2>
+            <h2 className="text-4xl font-medium font-mak mb-4">Контакты</h2>
             <p className="text-xl text-muted-foreground">
               Свяжитесь с нами для бронирования тура или получения консультации
             </p>
@@ -387,7 +387,7 @@ export default function Index() {
             </div>
             <Card>
               <CardHeader>
-                <CardTitle className="font-cormorant text-xl">Быстрая связь</CardTitle>
+                <CardTitle className="font-mak text-xl">Быстрая связь</CardTitle>
                 <CardDescription>
                   Заполните форму и мы свяжемся с вами в течение часа
                 </CardDescription>
@@ -427,7 +427,7 @@ export default function Index() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Icon name="Mountain" size={32} className="text-primary" />
-                <h3 className="text-xl font-medium font-cormorant">Туда-Сюда, Поехали</h3>
+                <h3 className="text-xl font-medium font-mak">Туда-Сюда, Поехали</h3>
               </div>
               <p className="text-gray-400 mb-4">
                 Ваш надежный партнер в мире приключенческого туризма

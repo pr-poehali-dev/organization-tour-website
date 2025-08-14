@@ -348,7 +348,8 @@ export default function Index() {
                 <Icon name="MapPin" size={24} className="text-primary mt-1" />
                 <div>
                   <h3 className="font-semibold font-montserrat mb-2">Адрес</h3>
-                  <p className="text-muted-foreground">
+                  <p className="г москва
+">
                     г. Москва, ул. Приключений, 123<br />
                     БЦ "Путешественник", офис 456
                   </p>

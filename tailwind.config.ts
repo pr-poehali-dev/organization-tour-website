@@ -18,7 +18,21 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				montserrat: ['Montserrat', 'sans-serif'],
+				'open-sans': ['Open Sans', 'sans-serif']
+			},
 			colors: {
+				adventure: {
+					DEFAULT: '#FF6835',
+					light: '#FF8A5C',
+					dark: '#E55A2E'
+				},
+				nature: {
+					DEFAULT: '#2E8B57',
+					light: '#3DA16A',
+					dark: '#25754B'
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

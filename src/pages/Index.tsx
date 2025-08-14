@@ -11,7 +11,7 @@ export default function Index() {
       id: 1,
       title: "Турция",
       description: "Откройте для себя древние города, средиземноморское побережье и богатую культуру Турции",
-      price: "45,000 ₽",
+      price: "200,000 ₽",
       duration: "8 дней",
       difficulty: "Легкая",
       image: "/img/3f423125-1ab4-40e7-b24a-7c86fbc7e0b3.jpg"
@@ -20,8 +20,8 @@ export default function Index() {
       id: 2,
       title: "Дагестан",
       description: "Путешествие по горным селениям и древним крепостям Кавказа",
-      price: "35,000 ₽",
-      duration: "6 дней",
+      price: "90,000 ₽",
+      duration: "8 дней",
       difficulty: "Средняя",
       image: "/img/d1f2b6fd-5c70-40ca-a5b8-1d3698a798b7.jpg"
     }
@@ -90,7 +90,7 @@ export default function Index() {
           <nav className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Icon name="Mountain" size={32} className="text-primary" />
-              <h1 className="text-2xl font-bold font-montserrat text-primary">Adventure Tours</h1>
+              <h1 className="text-2xl font-bold font-montserrat text-primary">Туда-Сюда, Поехали</h1>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#tours" className="hover:text-primary transition-colors">Туры</a>
@@ -126,7 +126,10 @@ export default function Index() {
             Открой мир невероятных путешествий с нашими эксклюзивными турами
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-4">
+              <Icon name="Send" size={20} className="mr-2" />
+              Оставить заявку
+            </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black text-lg px-8 py-4">
               <Icon name="Play" size={20} className="mr-2" />
               Смотреть видео
@@ -191,7 +194,7 @@ export default function Index() {
             <div>
               <h2 className="text-4xl font-bold font-montserrat mb-6">О нашей компании</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Adventure Tours — это команда профессионалов с 15-летним опытом организации незабываемых путешествий. 
+«Туда-Сюда, Поехали» — это команда профессионалов с 15-летним опытом организации незабываемых путешествий. 
                 Мы специализируемся на приключенческом туризме и знаем, как сделать ваше путешествие безопасным и увлекательным.
               </p>
               <div className="grid grid-cols-2 gap-6">
@@ -424,7 +427,7 @@ export default function Index() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Icon name="Mountain" size={32} className="text-primary" />
-                <h3 className="text-xl font-bold font-montserrat">Adventure Tours</h3>
+                <h3 className="text-xl font-bold font-montserrat">Туда-Сюда, Поехали</h3>
               </div>
               <p className="text-gray-400 mb-4">
                 Ваш надежный партнер в мире приключенческого туризма
@@ -465,7 +468,7 @@ export default function Index() {
           </div>
           <Separator className="my-8 bg-gray-700" />
           <div className="text-center text-gray-400">
-            <p>&copy; 2024 Adventure Tours. Все права защищены.</p>
+            <p>&copy; 2024 «Туда-Сюда, Поехали». Все права защищены.</p>
           </div>
         </div>
       </footer>

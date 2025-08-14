@@ -125,14 +125,10 @@ export default function Index() {
           <p className="text-xl md:text-2xl mb-8 animate-fade-in opacity-90">
             Открой мир невероятных путешествий с нашими эксклюзивными турами
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
+          <div className="flex justify-center animate-fade-in">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-4">
               <Icon name="Send" size={20} className="mr-2" />
               Оставить заявку
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black text-lg px-8 py-4">
-              <Icon name="Play" size={20} className="mr-2" />
-              Смотреть видео
             </Button>
           </div>
         </div>
@@ -399,11 +395,10 @@ export default function Index() {
                 </div>
                 <div>
                   <label className="text-sm font-medium">Интересующий тур</label>
-                  <select className="">
+                  <select className="w-full mt-1 px-3 py-2 border rounded-md">
                     <option>Выберите тур</option>
-                    <option>Горные Приключения</option>
-                    <option>Тропический Рай</option>
-                    <option>Северное Сияние</option>
+                    <option>Турция</option>
+                    <option>Дагестан</option>
                   </select>
                 </div>
                 <Button className="w-full bg-primary hover:bg-primary/90">

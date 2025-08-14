@@ -9,30 +9,21 @@ export default function Index() {
   const tours = [
     {
       id: 1,
-      title: "Горные Приключения",
-      description: "Незабываемый треккинг в горах с профессиональными гидами",
-      price: "35,000 ₽",
-      duration: "7 дней",
-      difficulty: "Средняя",
-      image: "/img/1048bc51-cee2-4c87-9707-51b9acefcae4.jpg"
+      title: "Турция",
+      description: "Откройте для себя древние города, средиземноморское побережье и богатую культуру Турции",
+      price: "45,000 ₽",
+      duration: "8 дней",
+      difficulty: "Легкая",
+      image: "/img/3f423125-1ab4-40e7-b24a-7c86fbc7e0b3.jpg"
     },
     {
       id: 2,
-      title: "Тропический Рай",
-      description: "Отдых на райских пляжах с белым песком и кристальной водой",
-      price: "45,000 ₽",
-      duration: "10 дней",
-      difficulty: "Легкая",
-      image: "/img/45bf2166-3780-493c-afb8-4cb8793634c0.jpg"
-    },
-    {
-      id: 3,
-      title: "Северное Сияние",
-      description: "Магическое путешествие за северным сиянием в Норвегии",
-      price: "65,000 ₽",
-      duration: "5 дней",
-      difficulty: "Легкая",
-      image: "/img/3c1af764-c11f-41ea-99ba-7478fe1ddc71.jpg"
+      title: "Дагестан",
+      description: "Путешествие по горным селениям и древним крепостям Кавказа",
+      price: "35,000 ₽",
+      duration: "6 дней",
+      difficulty: "Средняя",
+      image: "/img/d1f2b6fd-5c70-40ca-a5b8-1d3698a798b7.jpg"
     }
   ];
 
@@ -135,10 +126,7 @@ export default function Index() {
             Открой мир невероятных путешествий с нашими эксклюзивными турами
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-4">
-              <Icon name="Compass" size={20} className="mr-2" />
-              Выбрать тур
-            </Button>
+
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black text-lg px-8 py-4">
               <Icon name="Play" size={20} className="mr-2" />
               Смотреть видео
@@ -156,7 +144,7 @@ export default function Index() {
               Выберите свое идеальное приключение из нашей коллекции уникальных туров
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {tours.map((tour) => (
               <Card key={tour.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <div className="relative h-64 overflow-hidden">
